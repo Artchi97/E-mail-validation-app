@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --tomato: hsl(4, 100%, 67%);
+  --darkGrey: hsl(234, 29%, 20%);
+  --charcoalGrey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--charcoalGrey);
+}
+
+#container {
+  width: 60vw;
+  min-height: 70vh;
+  display: flex;
+  border: 2px solid white;
+  background-color: var(--white);
+  border-radius: 15px;
+}
+
+.content,
+.imageDiv {
+  flex-grow: 1;
+}
+
+.imageDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.imageDiv img {
+  width: 300px;
+}
+
+.content {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content > div {
+  width: 80%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+p {
+  line-height: 2;
+}
+
+p,
+ul li {
+  font-size: 12px;
+}
+
+li {
+  padding: 5px 0 5px 0;
+}
+
+.content li:last-child {
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--charcoalGrey);
+}
+
+form {
+  position: relative;
+}
+
+.invalidInfo {
+  position: absolute;
+  right: 0;
+  color: var(--tomato);
+  font-size: 12px;
+  font-weight: bold;
+  top: 3.5%;
+}
+
+input {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+}
+
+#subscribeBtn {
+  width: 100%;
+  padding: 10px 0 10px 0;
+  border: none;
+  background-color: rgba(255, 0, 55, 0.6);
+  cursor: pointer;
+}
+
+#subscribeBtn:hover {
+  background-color: rgba(255, 0, 55, 0.8);
+  font-weight: bold;
+}
+
+#thankDiv {
+  background-color: var(--white);
+  padding: 40px;
+  width: 450px;
+  min-height: max-content;
+  border-radius: 30px;
+}
+
+#thankDiv img {
+  width: 40px;
+  margin-bottom: 20px;
+}
+
+#thankDiv p {
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.textMail {
+  font-weight: bold;
+  font-size: 12px;
+  color: var(--charcoalGrey);
+}
+
+#dismiss {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  color: var(--white);
+  background-color: var(--charcoalGrey);
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+#dismiss:hover {
+  cursor: pointer;
+  background-color: var(--tomato);
+}
+
+.invalidInput {
+  border: 2px solid var(--tomato);
+}
